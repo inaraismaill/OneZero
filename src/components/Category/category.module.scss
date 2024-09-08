@@ -1,0 +1,71 @@
+.items {
+  gap: 17px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container {
+  width: 100%;
+  margin: 10px 0;
+}
+.title {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.item {
+  width: 176px;
+  overflow: hidden;
+  height: 106px;
+  border-radius: 8px;
+  border: 2px solid #f8f8f8;
+}
+.item span {
+  position: absolute;
+  background-color: white;
+  font-size: 13px;
+  padding: 2px 6px;
+  text-align: center;
+  margin: 7px;
+}
+.backImage {
+  width: 100%;
+  height: 64px;
+}
+.backImage img {
+  background-position: top;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.name {
+  padding: 10px 0 0 7px; // məsafə çox göründüyü üçün cuzi ölçü dəyişiklikləri etmişəm cssdə
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: left;
+}
+
+
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+@media only screen and (max-width: 412px) {
+  .item {
+    width: 45%;
+  }
+}
